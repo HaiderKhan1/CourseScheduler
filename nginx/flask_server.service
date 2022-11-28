@@ -1,0 +1,9 @@
+[Unit]
+Description=Flask Server
+After=network.target
+[Service]
+User=root
+Group=www-data
+ExecStart=/home/maindev/3760project/project/backend/env/bin/gunicorn -w 4 --bind 0.0.0.0:5000 --reload  --chdir /home/maindev/3760project/project/backend 'app:create_app()'
+[Install]
+WantedBy=multi-user.target

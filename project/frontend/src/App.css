@@ -1,0 +1,104 @@
+/* CSS file containing different styles for our components */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.th,
+.td {
+  border: 1px solid #ffffff;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.th {
+  background-color: #00c301;
+}
+
+.td {
+  background-color: #B7FFBF;
+}
+
+.tippy-box[data-theme~='orange']{
+  background-color: #FFC107;
+  color: black;
+  padding: 5px;
+}
+
+.lecs {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(66, 135, 245);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend {
+  text-align: center;
+}
+
+.labs {
+  height: 15px;
+  width: 15px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.sem {
+  height: 15px;
+  width: 15px;
+  background-color: purple;
+  border-radius: 50%;
+  display: inline-block;
+}

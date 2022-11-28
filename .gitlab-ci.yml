@@ -1,0 +1,17 @@
+run_backend_tests:
+    image: python:3.8-slim-buster
+    before_script:
+        - cd project/backend
+        - python -m venv env
+        - source env/bin/activate
+        - pip3 install -r requirements.txt
+    script:
+        - python -m unittest
+
+run_frontend_tests:
+    image: node:14.21-alpine
+    before_script:
+        - cd project/frontend
+        - npm install && npm i --save-dev @testing-library/react react-test-renderer
+    script:
+        - npm run test

@@ -1,0 +1,29 @@
+*.pyc
+.DS_STORE
+src/cli_package/periods.json
+src/cli_package/Sprint2.xlsx
+project/backend/env
+project/backend/__pycache__
+
+# dependencies
+project/frontend/node_modules
+project/frontend/.pnp
+project/frontend/.pnp.js
+project/frontend/package-lock.json
+
+# testing
+project/frontend/coverage
+
+# production
+project/frontend/build
+
+# misc
+project/frontend/.DS_Store
+project/frontend/.env.local
+project/frontend/.env.development.local
+.project/frontendenv/.test.local
+project/frontend/.env.production.local
+
+project/frontend/npm-debug.log*
+project/frontend/yarn-debug.log*
+project/frontend/yarn-error.log*
