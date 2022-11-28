@@ -26,4 +26,4 @@ The Course Scheduler is a full stack web application.
 ## Hosting Solution
 - The project is served using NginX, on a VM in the Google Cloud Platform
 - The web app has a SSL certificate, and it's accessed over https
-- The project has a custom domainname: cis3760team105
+- The project has a custom domain name: cis3760team105
